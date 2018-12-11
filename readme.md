@@ -12,6 +12,7 @@ Demo: [http://foundation-webpack.surge.sh/](http://foundation-webpack.surge.sh/)
 - Components folder structure
 - Components are namespaced with BEM
 - SVG sprites are automatically generated and served
+- Well tested on viewports from 320px (iPhone5) to 1440px
 - For production builds:
   - CSS compression
   - JavaScript module bundling with webpack

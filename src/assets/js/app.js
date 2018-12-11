@@ -29,7 +29,6 @@ import '../../partials/plans/plans';
 let $grid = $('.plans__container').isotope({
     itemSelector: '.js-plans__item',
     masonry: {
-        columnWidth: 40,
         isFitWidth: true,
     }
 });
