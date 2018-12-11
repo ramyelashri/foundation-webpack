@@ -67,7 +67,6 @@ function concatValues( obj ) {
     for ( var prop in obj ) {
         value += obj[ prop ];
     }
-    console.log(value, 'value')
     return value;
 }
 

@@ -18,11 +18,11 @@ Responsive app using Zurb foundation 6 + webpack + isotope
 
 
 ## Custom SCSS files purpose
-- **_typography.scss is inspired by material-design with a more friendly naming convention easily-maintainable font-sizes across viewports
-- **_spaces.scss to keep spacing between elements consistent across the app
-- **_global.scss for app-wide styles (prefixed with .global__element-name)
-- **_overrides.scss for third-parties overrides
-- **_colors.scss for maintaining app custom colors (easier maintainability than foundation's _settings)
+- **_typography.scss** is inspired by material-design with a more friendly naming convention easily-maintainable font-sizes across viewports
+- **_spaces.scss** to keep spacing between elements consistent across the app
+- **_global.scss** for app-wide styles (prefixed with .global__element-name)
+- **_overrides.scss** for third-parties overrides
+- **_colors.scss** for maintaining app custom colors (easier maintainability than foundation's _settings)
 
 ## Installation
 
@@ -42,7 +42,7 @@ Install dependencies:
 
 ```bash
 cd foundation-webpack
-npm install // or yarn install
+yarn install
 ```
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
@@ -50,7 +50,7 @@ The CLI will prompt you to give your project a name. The template will be downlo
 Now to start your project run 
 
 ```bash
-foundation watch // or yarn start
+yarn start
 ```
 
 Finally, your finished app will be created in a folder called `dist`, viewable at this URL:
