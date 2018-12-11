@@ -1,5 +1,6 @@
 # Foundation-webpack :fire:
-Responsive app using Zurb foundation 6 + webpack + isotope
+Responsive app using Zurb foundation 6 + webpack + isotope 
+Demo: [http://foundation-webpack.surge.sh/](http://foundation-webpack.surge.sh/)
 
 # Features
 - Zurb Foundation 6
