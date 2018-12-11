@@ -37,7 +37,6 @@
   @include typography__default-minus-4;
   font-weight: 600;
   visibility: hidden;
-  height: 27px;
   vertical-align: middle;
   .icon {
     font-size: .4rem;
@@ -47,7 +46,12 @@
 }
 
 .plans__item-field--1-text {
-  vertical-align: middle;
+  vertical-align: bottom;
+  margin-bottom: -1px;
+  display: inline-block;
+  @include breakpoint(medium) {
+    vertical-align: bottom;
+  }
 }
 
 .plans__item:nth-child(2) .plans__item-field--1 {
