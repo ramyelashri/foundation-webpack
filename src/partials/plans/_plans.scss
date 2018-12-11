@@ -1,0 +1,136 @@
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans__item {
+  min-width: 280px;
+  max-width: 310px;
+  margin: $space-16 $space-8;
+}
+
+.plans__item-field {
+  font-family: $typography__font-family2;
+  padding: $space-8;
+  text-align: center;
+  color: $color__7;
+}
+
+.plans__item-field--empty {
+  line-height: 2.35;
+}
+
+.plans__item-field--1 {
+  color: white;
+  background-color: $color__6;
+  padding: $space-8 $space-8;
+  border-radius: $space-12 $space-12 0 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+  min-height: initial;
+  text-transform: uppercase;
+  @include typography__default-minus-4;
+  font-weight: 600;
+  visibility: hidden;
+  height: 27px;
+  vertical-align: middle;
+  .icon {
+    font-size: .4rem;
+    vertical-align: middle;
+    margin-left: -4px;
+  }
+}
+
+.plans__item-field--1-text {
+  vertical-align: middle;
+}
+
+.plans__item:nth-child(2) .plans__item-field--1 {
+  visibility: visible;
+}
+
+.plans__item-field--2 {
+  border: 1px solid $color__2;
+  background-color: $color__2;
+  border-radius: $space-12 $space-12 0 0;
+  color: white;
+  @extend .typography__default;
+  font-weight: 700;
+}
+
+.plans__item-field--3 {
+  color: $color__2;
+  border: 1px solid $color__2;
+  padding: $space-16;
+}
+
+.plans__item-field--4 {
+  background-color: $color__1;
+  color: white;
+  font-weight: 600;
+  @extend .typography__default;
+  padding: $space-8;
+  border: 1px solid $color__1;
+}
+
+.plans__item-field--5 {
+  border: 1px solid $color__1;
+}
+
+.plans__item-field--6 {
+  border: 1px solid $color__1;
+  border-top: 0;
+}
+
+.plans__item-field--7,
+.plans__item-field--8,
+.plans__item-field--9,
+.plans__item-field--10 {
+  border-right: 1px solid $color__1;
+  border-left: 1px solid $color__1;
+  padding-bottom: 0;
+  min-height: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.plans__item-field-divider {
+  width: 70%;
+  height: 1px;
+  background-color: $color__5;
+}
+
+.plans__item-field--11 {
+  border-right: 1px solid $color__1;
+  border-left: 1px solid $color__1;
+  text-align: center;
+  > div {
+    max-width: 50px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+.plans__item-field--12 {
+  border: 1px solid $color__1;
+  border-top: 0;
+  display: flex;
+  justify-content: center;
+  > div {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .button {
+    width: 95%;
+    font-weight: 700 !important;
+    padding: $space-12;
+    @include typography__default;
+  }
+}

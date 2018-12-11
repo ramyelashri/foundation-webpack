@@ -1,0 +1,48 @@
+.global__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  @include breakpoint(large) {
+    width: 80%;
+  }
+}
+
+.global__button--tab,
+.global__button--tab:visited,
+.global__button--tab:focus {
+  background-color: $color__4;
+  color: $color__8;
+  border-bottom: 5px solid $color__5;
+  font-weight: 700 !important;
+  font-family: $typography__font-family2;
+  transition: ease-in-out .3s;
+  @include typography__default;
+  padding-right: $space-28;
+  padding-left: $space-28;
+  .icon {
+    margin-right: $space-4;
+  }
+}
+
+.global__button--tab:hover,
+.global__button--tab:active,
+.global__button--tab.active {
+  background-color: $color__4;
+  color: $color__1;
+  border-bottom-color: $color__1;
+}
+
+.global__600 {
+  font-weight: 600 !important;
+}
+.global__700 {
+  font-weight: 700 !important;
+}
+
+.grid-container {
+  margin: 50px 50px 200px;
+}
+
+
+

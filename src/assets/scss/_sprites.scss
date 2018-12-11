@@ -1,0 +1,56 @@
+.icon {
+    font-size: 8px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("/assets/icons/sprites.svg");
+    background-repeat: no-repeat;
+    background-size: 2.5em 10em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../sprites.png");
+}
+
+
+
+  .icon.favorite:before {
+      background-position: 0em 0em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .icon.mobile-phone-vibrating:before {
+      background-position: 0em -2.5em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .icon.placeholder:before {
+      background-position: 0em -5em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+  .icon.world-wide-web:before {
+      background-position: 0em -7.5em;
+      width: 2.5em;
+      height: 2.5em;
+  }
+
+
+
+
+

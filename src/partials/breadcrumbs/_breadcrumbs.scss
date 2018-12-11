@@ -1,0 +1,27 @@
+.breadcrumbs {
+  padding: $space-8;
+  margin: 0;
+}
+
+.breadcrumbs{
+  li {
+    text-transform: none;
+    @include typography__default-minus-2;
+    font-style: italic;
+  }
+  li:not(:last-child)::after {
+    content: '>';
+    font-weight: bold;
+    color: $color__3;
+  }
+}
+
+.breadcrumbs__list {
+  list-style: none;
+  text-transform: none;
+}
+
+.breadcrumbs__list-item a {
+  text-transform: none;
+  font-weight: normal;
+}

@@ -1,0 +1,89 @@
+.filters {
+  border: 1px solid $color__9;
+  margin-top: 1px;
+}
+
+.filters__list {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filters__text1 {
+  @extend .typography__default-plus-1;
+  text-align: center;
+  padding: $space-16;
+  font-weight: bold;
+  border-bottom: 1px solid $color__5;
+}
+
+.filters__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include breakpoint(large) {
+    flex-direction: row;
+  }
+  @include breakpoint(large) {
+    .tabs-panel {
+      display: block;
+    }
+  }
+}
+
+.filters__internet,
+.filters__minutes {
+  padding: $space-20;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint(large) {
+    width: 50%;
+  }
+}
+
+.filters__internet {
+  @include breakpoint(large) {
+    border-right: 1px solid $color__5;
+  }
+}
+
+.filters__mobile-tabs .tabs {
+  border: none;
+  background-color: $color__4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $typography__font-family2;
+  a {
+    @include typography__default-plus-1;
+    border-bottom: 3px solid $color__5;
+  }
+  .tabs-title {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background-color: $color__4;
+    border-color: $color__1;
+  }
+  .tabs-title > a:hover[aria-selected='true'] {
+    background-color: scale_color($color__4, $lightness: 14%);
+  }
+  .tabs-title > a:hover[aria-selected='false'] {
+    background-color: scale_color($color__4, 14%);
+  }
+}
+
+.filters__mobile-tabs {
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+
+.plans__text1 {
+  text-align: center;
+  padding: $space-32;
+  font-style: italic;
+}

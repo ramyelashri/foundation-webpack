@@ -1,0 +1,215 @@
+@charset 'utf-8';
+
+/* We're splitting fonts into "preferred" and "performance" in order to optimize
+   page loading. For important text, such as the body, we want it to load
+   immediately and not wait for the web font load, whereas for other sections,
+   such as headers and titles, we're OK with things taking a bit longer to load.
+   We do have some optional classes and parameters in the mixins, in case you
+   definitely want to make sure you're using the preferred font and don't mind
+   the performance hit.
+   We should be able to improve on this once CSS Font Loading L3 becomes more
+   widely available.
+*/
+
+@font-face {
+  font-family: 'du-font-primary-b';
+  src: url(..//fonts/duCo_WHeadline16_Bd.eot);
+  src: url(..//fonts/duCo_WHeadline16_Bd.eot)
+  format("embedded-opentype"),url(..//fonts/duCo_WHeadline16_Bd.woff2)
+  format("woff2"),url(..//fonts/duCo_WHeadline16_Bd.woff)
+  format("woff"),url(..//fonts/duCo_WHeadline16_Bd.ttf)
+  format("truetype")
+}
+
+@font-face {
+  font-family: 'du-font-primary-r';
+  src: url(..//fonts/duCo_WHeadline16_Rg.eot);
+  src: url(..//fonts/duCo_WHeadline16_Rg.eot)
+  format("embedded-opentype"),url(..//fonts/duCo_WHeadline16_Rg.woff2)
+  format("woff2"),url(..//fonts/duCo_WHeadline16_Rg.woff)
+  format("woff"),url(..//fonts/duCo_WHeadline16_Rg.ttf)
+  format("truetype")
+}
+
+@font-face {
+  font-family: 'du-font-primary-l';
+  src: url(..//fonts/duCo_WHeadline16_Lt.eot);
+  src: url(..//fonts/duCo_WHeadline16_Lt.eot)
+  format("embedded-opentype"),url(..//fonts/duCo_WHeadline16_Lt.woff2)
+  format("woff2"),url(..//fonts/duCo_WHeadline16_Lt.woff)
+  format("woff"),url(..//fonts/duCo_WHeadline16_Lt.ttf)
+  format("truetype")
+}
+
+@font-face {
+  font-family: 'du-font-secondary-bold';
+  src: url(..//fonts/ProximaNova-Bold.eot);
+  src: url(..//fonts/ProximaNova-Bold.eot)
+  format("embedded-opentype"),url(..//fonts/ProximaNova-Bold.woff2)
+  format("woff2"),url(..//fonts/ProximaNova-Bold.woff)
+  format("woff"),url(..//fonts/ProximaNova-Bold.ttf)
+  format("truetype")
+}
+
+@font-face {
+  font-family: 'du-font-secondary-lite';
+  src: url(..//fonts/ProximaNova-Light.eot);
+  src: url(..//fonts/ProximaNova-Light.eot)
+  format("embedded-opentype"),url(..//fonts/ProximaNova-Light.woff2)
+  format("woff2"),url(..//fonts/ProximaNova-Light.woff)
+  format("woff"),url(..//fonts/ProximaNova-Light.ttf)
+  format("truetype")
+}
+
+@font-face {
+  font-family: 'du-font-secondary-medium';
+  src: url(..//fonts/ProximaNova-Medium.eot);
+  src: url(..//fonts/ProximaNova-Medium.eot)
+  format("embedded-opentype"),url(..//fonts/ProximaNova-Medium.woff2)
+  format("woff2"),url(..//fonts/ProximaNova-Medium.woff)
+  format("woff"),url(..//fonts/ProximaNova-Medium.ttf)
+  format("truetype")
+}
+
+@font-face {
+  font-family: 'du-font-secondary-regular';
+  src: url(..//fonts/ProximaNova-Regular.eot);
+  src: url(..//fonts/ProximaNova-Regular.eot)
+  format("embedded-opentype"),url(..//fonts/ProximaNova-Regular.woff2)
+  format("woff2"),url(..//fonts/ProximaNova-Regular.woff)
+  format("woff"),url(..//fonts/ProximaNova-Regular.ttf)
+  format("truetype")
+}
+
+$typography__font-family1: 'du-font-secondary-regular','du-font-primary-l', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$typography__font-family2: 'du-font-secondary-bold', 'du-font-primary-b', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+html, body {
+  line-height: 1.2;
+  font-size: 14px;
+  @include breakpoint(small){
+    font-size: 10px;
+  }
+  @include breakpoint(medium){
+    font-size: 13px;
+  }
+  @include breakpoint(large){
+    font-size: 14px;
+  }
+}
+
+@mixin typography__default($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(18px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-plus-6($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(112px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-plus-5($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(56px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-plus-4($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(45px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-plus-3($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(34px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-plus-2($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(24px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin typography__default-plus-1($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(21px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-minus-1($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(17px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-minus-2($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(15px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-minus-3($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(14px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-minus-4($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(13px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+@mixin typography__default-minus-5($font-weight: 400, $opacity: 1) {
+  font-size: rem-calc(11px);
+  font-weight: $font-weight;
+  opacity: $opacity;
+}
+
+/**
+ * Class Name Styles
+ */
+.typography__default-plus-6 {
+  @include typography__default-plus-6();
+}
+
+.typography__default-plus-5 {
+  @include typography__default-plus-5();
+}
+
+.typography__default-plus-4 {
+  @include typography__default-plus-4();
+}
+
+.typography__default-plus-3 {
+  @include typography__default-plus-3();
+}
+
+.typography__default-plus-2 {
+  @include typography__default-plus-2();
+}
+
+.typography__default-plus-1 {
+  @include typography__default-plus-1();
+}
+
+.typography__default {
+  @include typography__default();
+}
+
+.typography__default-minus-1 {
+  @include typography__default-minus-1();
+}
+
+.typography__default-minus-2 {
+  @include typography__default-minus-2();
+}
+
+.typography__default-minus-2--color_contrast {
+  @include typography__default-minus-2();
+}

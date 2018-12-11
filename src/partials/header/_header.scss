@@ -1,0 +1,30 @@
+.header-container {
+  margin-top: $space-32;
+  border: 1px solid #f3f3f3;
+  width: 100%;
+}
+
+.header__title-container {
+  padding: $space-8 $space-32 $space-8 $space-24;
+  background-color: #f7f7f7;
+  display: inline-block;
+  border-radius: 0 $space-12 $space-12 0;
+}
+
+.header {
+  padding: $space-24 0;
+  background-image: url(https://shop.du.ae/_ui/responsive/common/du/images/postpaid-plans-en.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+}
+
+.header__left {
+  background-color: $color__2;
+  width: 20px;
+}
+
+.header__description {
+  font-weight: normal;
+}
